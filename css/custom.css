@@ -24,7 +24,7 @@ footer {
 
 .jumbotron {
 	text-align: center;
-	background-image: url('../images/banner.jpg');
+	background-image: url('../Images/banner.jpg');
 	color: white; 
 }
 
@@ -53,7 +53,7 @@ footer {
 }
 
 .homepage a:hover {
-	color: #e74c3c
+	color: #e74c3c;
 	text-decoration: none;
 	opacity: .8;
 }

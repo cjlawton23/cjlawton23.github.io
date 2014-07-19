@@ -31,7 +31,8 @@
     <![endif]-->
   </head>
 
-  <body>
+  <body data-spy="scroll" data-target=".navbar-collapse"
+  data-offset="50px">
 
    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
@@ -56,7 +57,7 @@
     
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron">
+    <div id="jumbotron" class="jumbotron">
       <div class="container">
 
         <h1>Welcome To My Site!</h1>
@@ -91,7 +92,7 @@
             <i class="fa fa-briefcase fa-stack-1x fa-inverse"></i>
           </span>
             <h3>Projects</h3>
-            <p>Here you will find all of the <span class= "emphasis"> projects</span> i have created or that I'am currently working on.  </p>
+            <p>Here you will find all of the <span class= "emphasis"> projects</span> i have created or that I am currently working on.  </p>
             <p><a class="btn btn-default" href="http://cjlawton23.weebly.com/projects.html" target="_blank" role="button">View  &raquo;</a></p>
           </div>
           <div class="col-md-4">
@@ -120,11 +121,15 @@
       <div class="container"
     </footer>
        
-
+    <div id="back-to-top">
+      <a href="#jumbotron"><i class="fa fa-3x fa fa-chevron-circle-up"></i></a> 
+    </div>   
 
    
     <!-- Placed at the end of the document so the pages load faster -->
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/smoothscroll.js"</script>
   </body>
 </html>

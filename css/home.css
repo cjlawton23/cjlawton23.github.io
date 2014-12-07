@@ -1,0 +1,91 @@
+body{
+	background-color: #29a4b9;
+
+}
+
+.leftnav{
+	float: left;
+	position: fixed;
+	width: 25%;
+	height: 1200px;
+	background-color: #2980b9;
+	text-align: center;
+	color: whitesmoke;
+}
+
+h1{
+	margin-top: 280px;
+	font-size: 50px;
+	margin-bottom: 25px;
+	font-family: 'Poiret One', cursive;
+}
+
+a{
+	color: white;
+}
+
+h2:hover{
+	text-decoration: none;
+	color: whitesmoke;
+	background-color: #2980b9;
+}
+
+a:hover{
+	text-decoration: none;
+}
+
+p{
+	font-size: 25px;
+	font-family: 'Poiret One', cursive;
+}
+
+.container{
+	width: 75%;
+	float: right;
+}
+
+.col-md-3{
+	background-color: white;
+	box-shadow: 0px 8px 10px grey;
+	height: 300px;
+	margin-left: 65px;
+	margin-top: 100px;
+	text-align: center;
+	padding: 0px;
+}
+
+h2{
+	background-color: #3498db;
+	width: 100%;
+	color: whitesmoke;
+	margin: 0px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.leftnav .fa{
+	margin-top: 60px;
+	color: whitesmoke;
+	margin-right: 6px;
+	margin-left: 6px;
+}
+
+.leftnav .fa a:hover{
+	color: #2980b9;
+}
+
+
+i:hover{
+	color: #29a4b9;
+}
+
+.contact .fa{
+	color: #e6f10f;
+	position: fixed;
+	bottom: 35px;
+	right: 35px;
+	text-align: center;
+}
+
+
+

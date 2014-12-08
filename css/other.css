@@ -31,9 +31,6 @@ a{
 	color: white;
 }
 
-h1{
-  text-align: center;
-}
 
 h2:hover{
 	text-decoration: none;
@@ -107,6 +104,10 @@ i:hover{
     left:0;
     text-decoration:none; /* Makes sure the link   doesn't get underlined */
     z-index:10;
+}
+
+.modal-content{
+  padding: 10px;
 }
 
 

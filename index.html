@@ -8,48 +8,86 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Casey Lawton</title>
+    <title>Casey Lawton BETA</title>
 
     <link href='http://fonts.googleapis.com/css?family=Anton' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="navbar-fixed-top.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+    <!--<link href="dist/css/flat-ui.css" rel="stylesheet"> -->
+    <link rel="import" href="http://www.polymer-project.org/components/paper-ripple/paper-ripple.html">
+    <link rel="import" href="http://www.polymer-project.org/components/core-icons/core-icons.html">
+    <link rel="import" href="http://www.polymer-project.org/components/font-roboto/roboto.html">
+    <link rel="import" href="components/core-animated-pages/core-animated-pages.html">
     <link rel="stylesheet" type="text/css" href="css/home.css">
     <script src="js/ie-emulation-modes-warning.js"></script>
   </head>
 
   <body>
     <div class="leftnav">
-        <h1> Casey Lawton </h1>
+        <h1> <a href="index.html">Casey Lawton </br> BETA </a></h1>
         <p><a href="resume.html">Resume</a></p>
-        <p>Projects</p>
-        <p>Other</p>
-        <a href="https://www.twitter.com"><i class="fa fa-twitter fa-4x"></i></a>
-        <span><a href="https://www.facebook.com"><i class="fa fa-facebook fa-4x"></i></a></span>
-        <a href="https://www.google.com"><span><i class="fa fa-google-plus fa-4x"></i></span> </a>
+        <p><a href="projects.html"> Projects</a></p>
+        <p><a href="other.html"> Other</a></p>
+        <p><a href="xmas.html"> X-Mas List</a></p>
+        <a href="https://twitter.com/CaseyJLawton"><i class="fa fa-twitter fa-4x"></i></a>
+        <span><a href="https://www.facebook.com/casey.lawton.5"><i class="fa fa-facebook fa-4x"></i></a></span>
+        <a href="https://plus.google.com/u/0/+Caseylawton/posts"><span><i class="fa fa-google-plus fa-4x"></i></span> </a></br>
+        <a href="https://www.linkedin.com/pub/casey-lawton/65/90/bb5"><span><i class="fa fa-linkedin-square fa-4x"></i></span> </a>
+        <a href="http://instagram.com/cjlawton/"><span><i class="fa fa-instagram fa-4x"></i></span> </a>
     </div>
 
     <div class="container">
-        <div class="col-md-3">
-            <h2><a href="resume.html">Resume</a></h2>
+        <h1>Hi! Welcome to my site. Currently, this website is really just a test bed for me to practice html, CSS, Java, and a few other programing languages so if things are incomplete or something weird happens… that’s why. However, soon it will be a hub for all things me :) Enjoy! </h1>
+        <div class="col-md-3 card">
+            <h2><a>Resume</a></h2>
+                <div class="button raised blue">
+                    <div class="center" fit>View</div>
+                    <paper-ripple fit></paper-ripple>
+                </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 card">
             <h2>Projects</h2>
+            <p>These are some of the projects i'm currently working on </p>
+                <div class="button raised blue">
+                    <a href="projects.html"></a>
+                    <div class="center" fit>View</div>
+                    <paper-ripple fit></paper-ripple>
+                </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 card">
+            <h2>X-Mas List</h2>
+            <p>My Christmas list for the year of 2014!</p>
+                <div class="button raised blue">
+                    <a href="xmas.html"></a>
+                    <div class="center" fit>View</div>
+                    <paper-ripple fit></paper-ripple>
+                </div>
+        </div>
+        <div class="col-md-3 card">
+            <h2>Finished Projects</h2>
+                <div class="button raised blue">
+                    <div class="center" fit> View </div>
+                    <paper-ripple fit></paper-ripple>
+                </div>
+        </div>
+        <div class="col-md-3 card">
+            <h2>Blog</h2>
+                <div class="button raised blue">
+                    <div class="center" fit>View</div>
+                    <paper-ripple fit></paper-ripple>
+                </div>
+        </div>
+        <div class="col-md-3 card">
             <h2>Other</h2>
-        </div>
-        <div class="col-md-3">
-            <h2>Resume</h2>
-        </div>
-        <div class="col-md-3">
-            <h2>Projects</h2>
-        </div>
-        <div class="col-md-3">
-            <h2>Other</h2>
+                <div class="button raised blue">
+                    <div class="center" fit>View</div>
+                    <paper-ripple fit></paper-ripple>
+                </div>
         </div>
     </div>
+
 
 
             <!-- _________________________________________________________________________Modal -->
@@ -74,9 +112,16 @@
 
         <!-- _________________________________________________________________________Modal END -->
 
-    <div class="contact">
+    <!-- <div class="contact">
         <a data-toggle="modal" data-target="#myModal"><i class="fa fa-plus-circle fa-5x"></i></a>
+    </div> -->
+
+
+    <div class="fab red" data-toggle="modal" data-target="#myModal">
+      <core-icon icon="add"></core-icon>
+      <paper-ripple class="circle recenteringTouch" fit></paper-ripple>
     </div>
+
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>   

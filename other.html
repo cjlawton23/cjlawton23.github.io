@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Casey Lawton BETA</title>
+
+    <link href='http://fonts.googleapis.com/css?family=Anton' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="navbar-fixed-top.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+    <!--<link href="dist/css/flat-ui.css" rel="stylesheet"> -->
+    <link rel="import" href="http://www.polymer-project.org/components/paper-ripple/paper-ripple.html">
+    <link rel="import" href="http://www.polymer-project.org/components/core-icons/core-icons.html">
+    <link rel="import" href="http://www.polymer-project.org/components/font-roboto/roboto.html">
+    <link rel="import" href="components/core-animated-pages/core-animated-pages.html">
+    <link rel="stylesheet" type="text/css" href="css/other.css">
+    <script src="js/ie-emulation-modes-warning.js"></script>
+  </head>
+
+  <body>
+
+
+    <div class="leftnav">
+        <h1> Casey Lawton </br> BETA </h1>
+        <p><a href="resume.html">Resume</a></p>
+        <p>Projects</p>
+        <p><s>Other</s></p>
+        <p class="active">Other</p>
+        <a href="https://www.twitter.com"><i class="fa fa-twitter fa-4x"></i></a>
+        <span><a href="https://www.facebook.com"><i class="fa fa-facebook fa-4x"></i></a></span>
+        <a href="https://www.google.com"><span><i class="fa fa-google-plus fa-4x"></i></span> </a>
+    </div>
+
+
+
+
+
+              <!-- _________________________________________________________________________Modal -->
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <h2>Send e-mail to Casey Lawton:</h2>
+                    <form action="MAILTO:cjlawton23@gmail.com" method="post" enctype="text/plain">
+                    Name:<br>
+                        <input type="text" name="name" value="your name"><br>
+                        E-mail:<br>
+                        <input type="text" name="mail" value="your email"><br>
+                        Comment:<br>
+                        <input type="text" name="comment" value="your comment" size="50"><br><br>
+                        <input type="submit" value="Send">
+                        <input type="reset" value="Reset">
+                    </form>
+                </div>
+              </div>
+            </div>
+            </div>
+
+        <!-- _________________________________________________________________________Modal END -->
+
+    <!-- <div class="contact">
+        <a data-toggle="modal" data-target="#myModal"><i class="fa fa-plus-circle fa-5x"></i></a>
+    </div> -->
+
+
+    <div class="fab red" data-toggle="modal" data-target="#myModal">
+      <core-icon icon="add"></core-icon>
+      <paper-ripple class="circle recenteringTouch" fit></paper-ripple>
+    </div>
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>   
+        <script src="js/smoothscroll.js"></script>   
+
+  </body>

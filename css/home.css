@@ -91,16 +91,16 @@ h2{
 }
 
 
-i:hover{
-	color: #29a4b9;
-}
-
 .contact .fa{
-	color: #e6f10f;
+	color: #ce2e3e;
 	position: fixed;
 	bottom: 35px;
 	right: 35px;
 	text-align: center;
+}
+
+.contact .fa:hover{
+	color: #a42531
 }
 
 
@@ -117,6 +117,7 @@ i:hover{
 .button.blue:hover{
 	background-color: #ce2e3e;
 }
+
 
 
 

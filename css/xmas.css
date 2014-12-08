@@ -133,6 +133,17 @@ i:hover{
   background-color: #55a5d9;
 }
 
+.contact .fa{
+  color: #ce2e3e;
+  position: fixed;
+  bottom: 35px;
+  right: 35px;
+  text-align: center;
+}
+
+.contact .fa:hover{
+  color: #a42531
+}
 
 
 .button a{

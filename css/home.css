@@ -7,7 +7,7 @@ body{
 	float: left;
 	position: fixed;
 	width: 25%;
-	height: 1200px;
+	height: 2000px;
 	background-color: #2980b9;
 	text-align: center;
 	color: whitesmoke;
@@ -350,3 +350,10 @@ h2{
 		margin-left: 50px;
 	}
 }
+
+@media (min-width:1200px){
+  .laftnav{
+    height: 
+
+  }
+  }

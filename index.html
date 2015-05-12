@@ -1,131 +1,605 @@
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content=" A portfolio and resume of Casey Lawton along with various other related projects he's worked on. ">
+	<meta name="author" content=" Casey, James, Lawton, blog, hire, web developer, small business, consulting.">
 
-    <title>Casey Lawton BETA</title>
+	<title>Casey Lawton</title>
 
-    <link href='http://fonts.googleapis.com/css?family=Anton' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="navbar-fixed-top.css" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
-    <!--<link href="dist/css/flat-ui.css" rel="stylesheet"> -->
-    <link rel="import" href="https://www.polymer-project.org/components/paper-ripple/paper-ripple.html">
-    <link rel="import" href="https://www.polymer-project.org/components/core-icons/core-icons.html">
-    <link rel="import" href="https://www.polymer-project.org/components/font-roboto/roboto.html">
-    <link rel="import" href="components/core-animated-pages/core-animated-pages.html">
-    <link rel="stylesheet" type="text/css" href="css/home.css">
-    <script src="js/ie-emulation-modes-warning.js"></script>
-  </head>
+	<!-- CSS -->
+	<link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<link href="assets/css/font-awesome.min.css" rel="stylesheet" media="screen">
+	<link href="assets/css/simple-line-icons.css" rel="stylesheet" media="screen">
+	<link href="assets/css/animate.css" rel="stylesheet">
+    
+	<!-- Custom styles CSS -->
+	<link href="assets/css/style.css" rel="stylesheet" media="screen">
+	<link href="assets/css/custom.css" rel="stylesheet" media="screen">
+    
+    <script src="assets/js/modernizr.custom.js"></script>
+       
+</head>
+<body>
 
-  <body>
-    <div class="leftnav">
-        <h1> <a href="index.html">Casey Lawton </br> BETA </a></h1>
-        <p><a href="resume.html">Resume</a></p>
-        <p><a href="projects.html"> Projects</a></p>
-        <p><a href="other.html"> Other</a></p>
-        <p><a href="xmas.html">Christmas List</a></p>
-        <div class="social-bar">
-            <a href="https://tw itter.com/CaseyJLawton"><i class="fa fa-twitter fa-4x"></i></a>
-            <span><a href="https://www.facebook.com/casey.lawton.5"><i class="fa fa-facebook fa-4x"></i></a></span>
-            <a href="https://plus.google.com/u/0/+Caseylawton/posts"><span><i class="fa fa-google-plus fa-4x"></i></span> </a>
-            <a href="https://www.linkedin.com/pub/casey-lawton/65/90/bb5"><span><i class="fa fa-linkedin-square fa-4x"></i></span> </a>
-            <a href="http://instagram.com/cjlawton/"><span><i class="fa fa-instagram fa-4x"></i></span> </a>
-        </div>
-    </div>
+	<!-- Preloader -->
 
-    <div class="container">
-        <h1>Hi! Welcome to my site. Currently, this website is really just a test bed for me to practice html, CSS, Java, and a few other programing languages so if things are incomplete or something weird happens… that’s why. However, soon it will be a hub for all things me :) Enjoy! </h1>
-        <div class="col-md-3 card">
-            <h2><a>Resume</a></h2>
-                <div class="button raised blue">
-                    <div class="center" fit>View</div>
-                    <paper-ripple fit></paper-ripple>
-                </div>
-        </div>
-        <div class="col-md-3 card">
-            <h2>Projects</h2>
-            <p>These are some of the projects i'm currently working on </p>
-                <div class="button raised blue">
-                    <a href="projects.html"></a>
-                    <div class="center" fit>View</div>
-                    <paper-ripple fit></paper-ripple>
-                </div>
-        </div>
-        <div class="col-md-3 card">
-            <h2>Christmas List</h2>
-            <p>My Christmas list for the year of 2014!</p>
-                <div class="button raised blue">
-                    <a href="xmas.html"></a>
-                    <div class="center" fit>View</div>
-                    <paper-ripple fit></paper-ripple>
-                </div>
-        </div>
-        <div class="col-md-3 card">
-            <h2>Finished Projects</h2>
-                <div class="button raised blue">
-                    <div class="center" fit> View </div>
-                    <paper-ripple fit></paper-ripple>
-                </div>
-        </div>
-        <div class="col-md-3 card">
-            <h2>Blog</h2>
-                <div class="button raised blue">
-                    <div class="center" fit>View</div>
-                    <paper-ripple fit></paper-ripple>
-                </div>
-        </div>
-        <div class="col-md-3 card">
-            <h2>Other</h2>
-                <div class="button raised blue">
-                    <div class="center" fit>View</div>
-                    <paper-ripple fit></paper-ripple>
-                </div>
-        </div>
-    </div>
+	<div id="preloader">
+		<div id="status"></div>
+	</div>
 
+	<!-- Home start -->
 
+	<section id="home" class="pfblock-image screen-height">
+        <div class="home-overlay"></div>
+		<div class="intro">
+		<img src="assets/images/casey.jpg">
+			<div class="start">Hello, my name is Casey Lawton and I am</div>
+			<h1>A problem solver</h1>
+			<div class="start">Specializing in business development and branding </div>
+		</div>
 
-            <!-- _________________________________________________________________________Modal -->
-            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <h2>Send e-mail to Casey Lawton:</h2>
-                    <form action="MAILTO:cjlawton23@gmail.com" method="post" enctype="text/plain">
-                    Name:<br>
-                        <input type="text" name="name" value="your name"><br>
-                        E-mail:<br>
-                        <input type="text" name="mail" value="your email"><br>
-                        Comment:<br>
-                        <input type="text" name="comment" value="your comment" size="50"><br><br>
-                        <input type="submit" value="Send">
-                        <input type="reset" value="Reset">
-                    </form>
+        <a href="#services">
+		<div class="scroll-down">
+            <span>
+                <i class="fa fa-angle-down fa-2x"></i>
+            </span>
+		</div>
+        </a>
+
+	</section>
+
+	<!-- Home end -->
+
+	<!-- Navigation start -->
+
+	<header class="header">
+
+		<nav class="navbar navbar-custom" role="navigation">
+
+			<div class="container">
+
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#custom-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="index.html">Casey Lawton</a>
+				</div>
+
+				<div class="collapse navbar-collapse" id="custom-collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#home">Home</a></li>
+						<li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Works</a></li>
+                        <li><a href="#skills">Skills</a></li>
+						<li><a href="#education">Education</a></li>
+						<li><a href="#employment">Employment</a></li>                    
+						<li><a href="#testimonials">Testimonials</a></li>
+						<li><a href="#contact">Contact</a></li>
+						<li><a href="blog/index.html">Blog</a></li>
+					</ul>
+				</div>
+
+			</div><!-- .container -->
+
+		</nav>
+
+	</header>
+
+	<!-- Navigation end -->
+
+    <!-- Services start -->
+
+	<section id="services" class="pfblock pfblock-gray">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-sm-6 col-sm-offset-3">
+
+					<div class="pfblock-header wow fadeInUp">
+						<h2 class="pfblock-title">This is what I do</h2>
+						<div class="pfblock-line"></div>
+						<div class="pfblock-subtitle">
+							Between my education and the real world experience I've obtained over the course of my life I've developed a set of skills which allow me to be an invaluable asset on any team or project I'm a part of. Below are the four skills I consider my best. 
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+			<div class="row">
+
+				<div class="col-sm-3">
+
+					<div class="iconbox wow slideInLeft">
+						<div class="iconbox-icon">
+							<span class="icon-magic-wand"></span>
+						</div>
+						<div class="iconbox-text">
+							<h3 class="iconbox-title">Business Development</h3>
+							<div class="iconbox-desc">
+								Starting and owning a business is no easy feat. I specialize in making it easier. 
+							</div>
+						</div>
+					</div>
+
+				</div> 
+
+				<div class="col-sm-3">
+
+					<div class="iconbox wow slideInLeft">
+						<div class="iconbox-icon">
+							<span class="icon-puzzle"></span>
+						</div>
+						<div class="iconbox-text">
+							<h3 class="iconbox-title">Web Development</h3>
+							<div class="iconbox-desc">
+								I use HTML, CSS, Javascript, and smash them with modern design to create beautiful websites. 
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="col-sm-3">
+
+					<div class="iconbox wow slideInRight">
+						<div class="iconbox-icon">
+							<span class="icon-badge"></span>
+						</div>
+						<div class="iconbox-text">
+							<h3 class="iconbox-title">Branding</h3>
+							<div class="iconbox-desc">
+								Who is your customer? How do they view you? Is it the same as you'd think?
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="col-sm-3">
+
+					<div class="iconbox wow slideInRight">
+						<div class="iconbox-icon">
+							<span class="icon-question"></span>
+						</div>
+						<div class="iconbox-text">
+							<h3 class="iconbox-title">Consultation</h3>
+							<div class="iconbox-desc">
+								Let me help you get your business innovative and profitable using the experience and skills I posses. 
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div><!-- .row -->
+		</div><!-- .container -->
+	</section>
+
+	<!-- Services end -->
+    
+	<!-- Portfolio start -->
+
+	<section id="portfolio" class="pfblock">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-sm-6 col-sm-offset-3">
+
+					<div class="pfblock-header wow fadeInUp">
+						<h2 class="pfblock-title">My works</h2>
+						<div class="pfblock-line"></div>
+						<div class="pfblock-subtitle">
+							I'm proud of the work I do. It's for this reason that I choose to display it in a place that the whole world can see. Below are some of the projects I've worked on.  
+						</div>
+					</div>
+
+				</div>
+
+			</div><!-- .row -->
+            
+            
+            <div class="row">
+                
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    
+                    <div class="grid wow zoomIn">
+                        <figure class="effect-bubba">
+                            <img src="assets/images/item-1.jpg" alt="img01"/>
+                            <figcaption>
+                                <h2>213 <span>Foods</span></h2>
+                                <p>Providing exceptional products using quality ingredients</p>
+                            </figcaption>			
+                        </figure>
+                    </div>
+                    
                 </div>
-              </div>
+
+                <div class="col-xs-12 col-sm-4 col-md-4">
+            
+                    <div class="grid wow zoomIn">
+                        <figure class="effect-bubba">
+                            <img src="assets/images/item-2.jpg" alt="img01"/>
+                            <figcaption>
+                                <h2>Grandma Jo's <span> Salsa</span></h2>
+                                <p>Authentic Mexican salsa </p>
+                            </figcaption>			
+                        </figure>
+                    </div>
+                    
+                </div>
+                
+                <div class="col-xs-12 col-sm-4 col-md-4">
+            
+                    <div class="grid wow zoomIn">
+                        <figure class="effect-bubba">
+                            <img src="assets/images/item-3.jpg" alt="img01"/>
+                            <figcaption>
+                                <h2>Android <span>Loot</span></h2>
+                                <p>Your hub for Android Merchandise</p>
+                            </figcaption>			
+                        </figure>
+                    </div>
+                    
+                </div>
+                
+                <div class="col-xs-12 col-sm-4 col-md-4">
+            
+                    <div class="grid wow zoomIn">
+                        <figure class="effect-bubba">
+                            <img src="assets/images/item-4.jpg" alt="img01"/>
+                            <figcaption>
+                                <h2>Aurora<span>Board</span></h2>
+                                <p>The worlds first ever all-in-one rgb led skateboard underglow</p>
+                            </figcaption>			
+                        </figure>
+                    </div>
+                    
+                </div>
+                
+                <div class="col-xs-12 col-sm-4 col-md-4">
+            
+                    <div class="grid wow zoomIn">
+                        <figure class="effect-bubba">
+                            <img src="assets/images/item-5.jpg" alt="img01"/>
+                            <figcaption>
+                                <h2>Lawton Holiday <span>Lighting</span></h2>
+                                <p>Quality Lighting * Lowest Prices</p>
+                            </figcaption>			
+                        </figure>
+                    </div>
+                    
+                </div>
+                
+                <div class="col-xs-12 col-sm-4 col-md-4">
+            
+                    <div class="grid wow zoomIn">
+                        <figure class="effect-bubba">
+                            <img src="assets/images/item-6.jpg" alt="img01"/>
+                            <figcaption>
+                                <h2>Coming <span>Soon</span></h2>
+                                <p>Just you wait.</p>
+                            </figcaption>			
+                        </figure>
+                    </div>
+                    
+                </div>
+                
             </div>
-            </div>
-
-        <!-- _________________________________________________________________________Modal END -->
-
-    <!-- <div class="contact">
-        <a data-toggle="modal" data-target="#myModal"><i class="fa fa-plus-circle fa-5x"></i></a>
-    </div> -->
 
 
-    <div class="contact" data-toggle="modal" data-target="#myModal">
-        <i class="fa fa-envelope fa-4x"></i>
-    </div>
+		</div><!-- .contaier -->
+
+	</section>
+
+	<!-- Portfolio end -->
+    
+    <!-- Skills start -->
+    
+    <section class="pfblock pfblock-gray" id="skills">
+		
+			<div class="container">
+			
+				<div class="row skills">
+					
+					<div class="row">
+
+                        <div class="col-sm-6 col-sm-offset-3">
+
+                            <div class="pfblock-header wow fadeInUp">
+                                <h2 class="pfblock-title">My Skills</h2>
+                                <div class="pfblock-line"></div>
+                                <div class="pfblock-subtitle">
+                                    It's difficult to master something completely. However, I try my best and constantly work towards being the best I can be. Here are 4 of the skills I work on the most and how far along I think I am.
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div><!-- .row -->
+					
+					<div class="col-sm-6 col-md-3 text-center">
+						<span data-percent="90" class="chart easyPieChart" style="width: 140px; height: 140px; line-height: 140px;">
+                            <span class="percent">90</span>
+                        </span>
+						<h3 class="text-center">Business Development</h3>
+					</div>
+					<div class="col-sm-6 col-md-3 text-center">
+						<span data-percent="90" class="chart easyPieChart" style="width: 140px; height: 140px; line-height: 140px;">
+                            <span class="percent">90</span>
+                        </span>
+						<h3 class="text-center">Branding</h3>
+					</div>
+					<div class="col-sm-6 col-md-3 text-center">
+						<span data-percent="85" class="chart easyPieChart" style="width: 140px; height: 140px; line-height: 140px;">
+                            <span class="percent">85</span>
+                        </span>
+						<h3 class="text-center">Web Design</h3>
+					</div>
+					<div class="col-sm-6 col-md-3 text-center">
+						<span data-percent="75" class="chart easyPieChart" style="width: 140px; height: 140px; line-height: 140px;">
+                            <span class="percent">75</span>
+                        </span>
+						<h3 class="text-center">Consultation</h3>
+					</div>
+					
+				</div><!--End row -->
+			
+			</div>
+		
+    </section>
+    
+    <!-- Skills end -->
+
+    <!-- Education Start-->
+    	<section id="education" class="pfblock">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-sm-12 col-sm-offset-0">
+
+					<div class="pfblock-header wow fadeInUp">
+						<h2 class="pfblock-title">Education</h2>
+						<div class="pfblock-line"></div>
+						<div class="col-md-4">
+							<img src="assets/images/bohs_logo.png">
+							<h3>Brea Olinda High School</h3>
+							<p>Diploma 2008</p>	
+						</div>
+						<div class="col-md-4">
+							<img src="assets/images/fc_logo.jpg">
+							<h3>Fullerton College</h3>
+							<p>Associates 2012</p>
+						</div>
+						<div class="col-md-4">
+							<img src="assets/images/asu_logo.png">
+							<h3>Arizona State University</h3>
+							<p>BA Technology Entrepreneurship Innovation Management 2015</p>
+						</div>												
+					</div>
+
+				</div>
+
+			</div><!-- .row -->
+		</div><!-- .contaier -->
+	</section>
+	<!-- Education End-->
+
+    <!-- employment Start-->
+    	<section id="employment" class="pfblock-gray">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-md-12 col-md-offset-0">
+
+					<div class="pfblock-header wow fadeInUp">
+						<h2 class="pfblock-title">Employment</h2>
+						<div class="pfblock-line"></div>
+						<div class="pfblock-subtitle col-md-3">
+							<img src="assets/images/213_logo.png">
+							<h3>213 Foods</h3>
+							<p>Marketing and Technology Consultant<br>2014-2015</p>
+						</div>
+						<div class="pfblock-subtitle col-md-3">
+							<img src="assets/images/bestbuy_logo.png">
+							<h3>Best Buy</h3>
+							<p>Sales Consultant<br>2013-2014</p>
+						</div>
+						<div class="pfblock-subtitle col-md-3">
+							<img src="assets/images/cds_logo.png">						
+							<h3>Warehouse Demo Services</h3>
+							<p>Product Sales<br>2009-2013</p>
+						</div>
+						<div class="pfblock-subtitle col-md-3">
+							<img src="assets/images/lhl_logo.png">
+							<h3>Lawton Holiday Lighting</h3>
+							<p>Owner/Operator<br>2010-Present</p>
+						</div>																							
+					</div>
+
+				</div>
+
+			</div><!-- .row -->
+		</div><!-- .contaier -->
+	</section>
+	<!-- Employment End-->
+
+	<!-- CallToAction start -->
+
+	<section class="calltoaction">
+		<div class="container">
+
+			<div class="row">
+
+				<div class="col-md-12 col-lg-12">
+					<h2 class="wow slideInRight" data-wow-delay=".1s">Like what you see?</h2>
+					<div class="calltoaction-decription wow slideInRight" data-wow-delay=".2s">
+						I'm available for freelance projects as well as full time positions.
+					</div>
+				</div>
+
+				<div class="col-md-12 col-lg-12 calltoaction-btn wow slideInRight" data-wow-delay=".3s">
+					<a href="#contact" class="btn btn-lg">Hire Me</a>
+				</div>
+
+			</div><!-- .row -->
+		</div><!-- .container -->
+	</section>
+
+	<!-- CallToAction end -->
+
+	<!-- Testimonials start -->
+
+	<section id="testimonials" class="pfblock pfblock-gray">
+
+		<div class="container">
+            
+            <div class="row">
+
+				<div class="col-sm-6 col-sm-offset-3">
+
+					<div class="pfblock-header wow fadeInUp">
+						<h2 class="pfblock-title">What my clients say</h2>
+						<div class="pfblock-line"></div>
+						<div class="pfblock-subtitle">
+							Here is what some of the great people and companies I've worked with in the past have to say about me.
+						</div>
+					</div>
+
+				</div>
+
+			</div><!-- .row -->
+
+            <div class="row">
+
+			<div id="cbp-qtrotator" class="cbp-qtrotator">
+                <div class="cbp-qtcontent">
+                    <img src="assets/images/213_logo.png" alt="client-1" />
+                    <blockquote>
+                      <p>Work with Casey was a pleasure. He understood exactly what I wanted and created an awesome site for my company.</p>
+                      <footer>Bob Lawton</footer>
+                    </blockquote>
+                </div>
+                <div class="cbp-qtcontent">
+                    <img src="assets/images/client-2.jpg" alt="client-2" />
+                    <blockquote>
+                      <p>I'm really happy with the results. Get 100% satisfaction is difficult but Casey got it without problems.</p>
+                      <footer>Jane Doe</footer>
+                    </blockquote>
+                </div>
+
+            </div>		
+
+            </div><!-- .row -->
+
+					
+		</div><!-- .row -->
+	</section>
+
+	<!-- Testimonial end -->
 
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>   
-        <script src="js/smoothscroll.js"></script>   
+	<!-- Contact start -->
 
-  </body>
+	<section id="contact" class="pfblock">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-sm-6 col-sm-offset-3">
+
+					<div class="pfblock-header">
+						<h2 class="pfblock-title">Drop me a line</h2>
+						<div class="pfblock-line"></div>
+						<div class="pfblock-subtitle">
+							Feel free to contact me at any time. I'll do my best to get back to you within 24 hours. 
+						</div>
+					</div>
+
+				</div>
+
+			</div><!-- .row -->
+
+			<div class="row">
+
+				<div class="col-sm-12 col-sm-offset-4">
+
+						<!-- Do not change the code! -->
+						<a id="foxyform_embed_link_667191" href="http://www.foxyform.com/">foxyform</a>
+						<script type="text/javascript">
+						(function(d, t){
+						   var g = d.createElement(t),
+						       s = d.getElementsByTagName(t)[0];
+						   g.src = "http://www.foxyform.com/js.php?id=667191&sec_hash=16f6649201a&width=350px";
+						   s.parentNode.insertBefore(g, s);
+						}(document, "script"));
+						</script>
+						<!-- Do not change the code! -->
+
+				</div>
+
+			</div><!-- .row -->
+		</div><!-- .container -->
+	</section>
+
+	<!-- Contact end -->
+
+	<!-- Footer start -->
+
+	<footer id="footer">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-sm-12">
+
+					<ul class="social-links">
+						<li><a href="https://www.facebook.com/casey.lawton.5" class="wow fadeInUp"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="https://twitter.com/CaseyJLawton" class="wow fadeInUp" data-wow-delay=".1s"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="https://plus.google.com/+Caseylawton/posts?tab=XX&authuser=0" class="wow fadeInUp" data-wow-delay=".2s"><i class="fa fa-google-plus"></i></a></li>
+						<li><a href="https://www.linkedin.com/profile/view?id=230109113&trk=nav_responsive_tab_profile" class="wow fadeInUp" data-wow-delay=".4s"><i class="fa fa-linkedin"></i></a></li>
+					</ul>
+
+					<p class="heart">
+                        Made with <span class="fa fa-heart fa-2x animated pulse"></span> in California
+                    </p>
+                    <p class="copyright">
+                        © 2015 Casey Lawton
+					</p>
+
+				</div>
+
+			</div><!-- .row -->
+		</div><!-- .container -->
+	</footer>
+
+	<!-- Footer end -->
+
+	<!-- Scroll to top -->
+
+	<div class="scroll-up">
+		<a href="#home"><i class="fa fa-angle-up"></i></a>
+	</div>
+    
+    <!-- Scroll to top end-->
+
+	<!-- Javascript files -->
+
+	<script src="assets/js/jquery-1.11.1.min.js"></script>
+	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+	<script src="assets/js/jquery.parallax-1.1.3.js"></script>
+	<script src="assets/js/imagesloaded.pkgd.js"></script>
+	<script src="assets/js/jquery.sticky.js"></script>
+	<script src="assets/js/smoothscroll.js"></script>
+	<script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/jquery.easypiechart.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/jquery.cbpQTRotator.js"></script>
+	<script src="assets/js/custom.js"></script>
+
+</body>
+</html>

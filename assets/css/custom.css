@@ -1,0 +1,44 @@
+.intro img{
+	width: 280px;
+	border-radius: 50%;
+}
+
+
+
+
+#education img{
+	width: 200px;
+	height: 200px;
+}
+#education h3{
+	margin-top: 15px;
+}
+
+#education .col-md-4{
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+
+#employment{
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+#employment .col-md-3{
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+#employment img{
+	width: 200px;
+	height: 200px;
+}
+
+#employment h3{
+	margin-top: 15px;
+}
+
+.cbp-qtcontent img{
+	width: 210px;
+}

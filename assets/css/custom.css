@@ -53,5 +53,8 @@
 	.intro img{
 		width: 70%
 	}
+	.scroll-down{
+		bottom: 5px;	
+	}
 
 }

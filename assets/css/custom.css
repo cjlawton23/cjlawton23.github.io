@@ -46,3 +46,12 @@
 .cbp-qtcontent img{
 	width: 210px;
 }
+
+
+@media (max-width: 400px) {
+
+	.intro img{
+		width: 70%
+	}
+
+}

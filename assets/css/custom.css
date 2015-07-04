@@ -7,7 +7,9 @@
 	border-radius: 50%;
 }
 
-
+.navbar-custom .navbar-brand{
+	font-size: 18px;
+}
 
 
 #education img{

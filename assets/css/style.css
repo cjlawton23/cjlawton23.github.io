@@ -733,7 +733,7 @@ textarea.form-control {
 	float: left;
 	overflow: hidden;
 	margin: 10px 1%;
-	min-width: 100%;
+
 	max-width: 100%;
 	height: auto;
 	background: #3085a3;
@@ -744,7 +744,7 @@ textarea.form-control {
 .grid figure img {
 	position: relative;
 	display: block;
-	min-height: 100%;
+
 	max-width: 100%;
 	opacity: 0.8;
 }

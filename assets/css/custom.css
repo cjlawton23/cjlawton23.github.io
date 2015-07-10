@@ -49,6 +49,15 @@
 	width: 210px;
 }
 
+.social-blog{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.blog-pic{
+	width: 100%;
+}
+
 
 @media (max-width: 400px) {
 
@@ -58,5 +67,4 @@
 	.scroll-down{
 		bottom: 5px;	
 	}
-
 }
